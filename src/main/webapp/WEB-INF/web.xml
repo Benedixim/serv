@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <servlet>
+        <servlet-name>HelloServletTask</servlet-name>
+        <servlet-class>com.example.ee.HelloServletTask</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloServletTask</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+
+
+
+    <servlet>
+        <servlet-name>FirstJSP</servlet-name>
+        <jsp-file>/index.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FirstJSP</servlet-name>
+        <url-pattern>/first</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>TaskJSP</servlet-name>
+        <jsp-file>/task.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TaskJSP</servlet-name>
+        <url-pattern>/task</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Task2JSP</servlet-name>
+        <jsp-file>/task2.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Task2JSP</servlet-name>
+        <url-pattern>/task2</url-pattern>
+    </servlet-mapping>
+
+</web-app>
